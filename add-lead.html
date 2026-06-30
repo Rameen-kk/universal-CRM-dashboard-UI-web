@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Lead - SoftGrid CRM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">SoftGrid CRM</div>
+      <nav>
+        <a href="dashboard.html">Customer List</a>
+        <a href="add-customer.html">Add Customer</a>
+        <a href="customer-profile.html">Customer Profile</a>
+        <a href="leads.html">Lead Management</a>
+        <a href="add-lead.html" class="active">Add Lead</a>
+      </nav>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <h2>Add Lead</h2>
+        <a href="leads.html" class="btn-primary">← Back to Leads</a>
+      </header>
+
+      <div class="content">
+        <div class="card" style="max-width: 700px;">
+          <h3 style="margin:0 0 20px;">Lead Information</h3>
+          <form>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+              <div class="field">
+                <label>Full Name</label>
+                <input type="text" placeholder="John Doe" required>
+              </div>
+              <div class="field">
+                <label>Email Address</label>
+                <input type="email" placeholder="john@company.com" required>
+              </div>
+              <div class="field">
+                <label>Phone</label>
+                <input type="tel" placeholder="+92 300 1234567">
+              </div>
+              <div class="field">
+                <label>Company</label>
+                <input type="text" placeholder="TechSoft Inc">
+              </div>
+              <div class="field">
+                <label>Status</label>
+                <select style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid var(--border); background:#0b1220; color:var(--text);">
+                  <option value="new">New</option>
+                  <option value="contacted">Contacted</option>
+                  <option value="won">Won</option>
+                  <option value="lost">Lost</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Lead Source</label>
+                <select style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid var(--border); background:#0b1220; color:var(--text);">
+                  <option value="">Select Source</option>
+                  <option value="website">Website</option>
+                  <option value="referral">Referral</option>
+                  <option value="social">Social Media</option>
+                  <option value="ads">Paid Ads</option>
+                  <option value="cold-call">Cold Call</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Estimated Value $</label>
+                <input type="number" placeholder="5000">
+              </div>
+              <div class="field">
+                <label>Assigned To</label>
+                <input type="text" placeholder="Sales Rep Name">
+              </div>
+            </div>
+            <div class="field" style="margin-top:16px;">
+              <label>Notes</label>
+              <input type="text" placeholder="Add any notes about this lead...">
+            </div>
+            <button class="btn" type="submit" style="margin-top:20px;">Save Lead</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
