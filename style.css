@@ -208,3 +208,10 @@ tr:hover td { background: #0b1220; }
  .dashboard { grid-template-columns: 1fr; }
  .sidebar { display: none; } /* Baad me hamburger se toggle kar dena */
 }
+/* Toolbar Fix */
+.toolbar input::placeholder { color: var(--muted); }
+.toolbar select { color: var(--text); appearance: none; }
+
+/* Pagination Fix */
+.pagination button { color: var(--text); }
+.pagination button:not(.active) { color: var(--muted); }
