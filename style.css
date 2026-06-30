@@ -208,10 +208,53 @@ tr:hover td { background: #0b1220; }
  .dashboard { grid-template-columns: 1fr; }
  .sidebar { display: none; } /* Baad me hamburger se toggle kar dena */
 }
-/* Toolbar Fix */
-.toolbar input::placeholder { color: var(--muted); }
-.toolbar select { color: var(--text); appearance: none; }
+
+/* ===== Day 2 Fixes: Toolbar + Pagination Visibility ===== */
+
+.toolbar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.toolbar input {
+  background: #0b1220 !important;
+  border: 1px solid #334155;
+  color: var(--text) !important;
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+  min-width: 220px;
+}
+.toolbar input::placeholder { 
+  color: var(--muted) !important; 
+}
+.toolbar select {
+  background: #0b1220 !important;
+  border: 1px solid #334155;
+  color: var(--text) !important;
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+}
 
 /* Pagination Fix */
-.pagination button { color: var(--text); }
-.pagination button:not(.active) { color: var(--muted); }
+.pagination {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+.pagination button {
+  background: #0b1220 !important;
+  border: 1px solid #334155;
+  color: var(--muted) !important;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.pagination button.active {
+  background: var(--accent) !important;
+  border-color: var(--accent);
+  color: #fff !important;
+}
