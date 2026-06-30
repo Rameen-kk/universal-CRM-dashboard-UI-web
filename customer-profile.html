@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Profile - SoftGrid CRM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">SoftGrid CRM</div>
+      <nav>
+        <a href="dashboard.html">Customer List</a>
+        <a href="add-customer.html">Add Customer</a>
+        <a href="customer-profile.html" class="active">Customer Profile</a>
+        <a href="leads.html">Lead Management</a>
+        <a href="add-lead.html">Add Lead</a>
+      </nav>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <h2>Customer Profile</h2>
+        <button class="btn-primary">Edit Profile</button>
+      </header>
+
+      <div class="content">
+        <div class="card">
+          <!-- Profile Card Component -->
+          <div style="display:flex; gap:20px; align-items:center; margin-bottom:24px; padding-bottom:24px; border-bottom:1px solid var(--border);">
+            <img src="https://i.pravatar.cc/100?u=ali" alt="Ali Khan" style="width:100px; height:100px; border-radius:50%; border:3px solid var(--accent);">
+            <div>
+              <h2 style="margin:0 0 4px;">Ali Khan</h2>
+              <p style="margin:0 0 8px; color:var(--muted);">ali@mail.com | TechSoft</p>
+              <span class="badge new">New</span>
+            </div>
+          </div>
+
+          <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+            <div>
+              <p style="color:var(--muted); font-size:13px; margin:0 0 4px;">Phone</p>
+              <p style="margin:0; font-weight:600;">+92 300 1234567</p>
+            </div>
+            <div>
+              <p style="color:var(--muted); font-size:13px; margin:0 0 4px;">Company</p>
+              <p style="margin:0; font-weight:600;">TechSoft</p>
+            </div>
+            <div>
+              <p style="color:var(--muted); font-size:13px; margin:0 0 4px;">Deal Value</p>
+              <p style="margin:0; font-weight:600;">$5,200</p>
+            </div>
+            <div>
+              <p style="color:var(--muted); font-size:13px; margin:0 0 4px;">Last Contact</p>
+              <p style="margin:0; font-weight:600;">2 days ago</p>
+            </div>
+            <div>
+              <p style="color:var(--muted); font-size:13px; margin:0 0 4px;">Assigned To</p>
+              <p style="margin:0; font-weight:600;">Sara Ahmed</p>
+            </div>
+            <div>
+              <p style="color:var(--muted); font-size:13px; margin:0 0 4px;">Source</p>
+              <p style="margin:0; font-weight:600;">Website</p>
+            </div>
+          </div>
+
+          <div style="margin-top:24px;">
+            <h4 style="margin:0 0 12px;">Recent Activity</h4>
+            <p style="color:var(--muted); font-size:14px;">• Email sent - 2 days ago</p>
+            <p style="color:var(--muted); font-size:14px;">• Call scheduled - 5 days ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
