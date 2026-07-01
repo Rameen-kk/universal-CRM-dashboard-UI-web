@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employees - SoftGrid CRM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">SoftGrid CRM</div>
+      <nav>
+        <a href="dashboard.html">Customer List</a>
+        <a href="leads.html">Lead Management</a>
+        <a href="employees.html" class="active">Employee List</a>
+        <a href="tasks.html">Task List</a>
+        <a href="index.html">Logout</a>
+      </nav>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <h2>Employees</h2>
+        <button class="btn-primary" onclick="document.getElementById('empModal').classList.add('active')">+ Add Employee</button>
+      </header>
+
+      <div class="content">
+        <div class="grid">
+          <div class="kpi"><h3>Total Employees</h3><p>48</p></div>
+          <div class="kpi"><h3>Active Now</h3><p>36</p></div>
+          <div class="kpi"><h3>On Leave</h3><p>3</p></div>
+          <div class="kpi"><h3>New Hires</h3><p>2</p></div>
+        </div>
+
+        <div class="employee-grid">
+          <div class="emp-card">
+            <img src="https://i.pravatar.cc/80?u=sara" alt="Sara">
+            <h3>Sara Ahmed</h3>
+            <p>Sales Manager</p>
+            <span class="badge active" style="margin-top:8px; display:inline-block;">Active</span>
+          </div>
+          <div class="emp-card">
+            <img src="https://i.pravatar.cc/80?u=usman" alt="Usman">
+            <h3>Usman Raza</h3>
+            <p>Developer</p>
+            <span class="badge active" style="margin-top:8px; display:inline-block;">Active</span>
+          </div>
+          <div class="emp-card">
+            <img src="https://i.pravatar.cc/80?u=ali" alt="Ali">
+            <h3>Ali Khan</h3>
+            <p>Support</p>
+            <span class="badge cold" style="margin-top:8px; display:inline-block;">On Leave</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Design: Add Employee Form -->
+  <div class="modal-overlay" id="empModal" onclick="if(event.target.id=='empModal') this.classList.remove('active')">
+    <div class="modal">
+      <button class="modal-close" onclick="document.getElementById('empModal').classList.remove('active')">&times;</button>
+      <h3>Add Employee</h3>
+      <form class="form-2col">
+        <div class="field"><label>Name</label><input type="text" placeholder="Full Name"></div>
+        <div class="field"><label>Role</label><input type="text" placeholder="Developer"></div>
+        <div class="field"><label>Email</label><input type="email" placeholder="email@company.com"></div>
+        <div class="field"><label>Phone</label><input type="tel" placeholder="+92 300..."></div>
+        <button class="btn" type="submit" style="grid-column:1/-1;">Save Employee</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
