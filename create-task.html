@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Task - SoftGrid CRM</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="logo">SoftGrid CRM</div>
+      <nav>
+        <a href="dashboard.html">Customer List</a>
+        <a href="employees.html">Employee List</a>
+        <a href="tasks.html">Task List</a>
+        <a href="create-task.html" class="active">Create Task</a>
+        <a href="index.html">Logout</a>
+      </nav>
+    </aside>
+    <div class="main">
+      <header class="topbar"><h2>Create Task</h2><a href="tasks.html" class="btn-primary">← Back</a></header>
+      <div class="content">
+        <div class="card" style="max-width:700px;">
+          <h3 style="margin:0 0 20px;">Task Details</h3>
+          <form class="form-2col">
+            <div class="field" style="grid-column:1/-1;"><label>Task Title</label><input type="text" placeholder="e.g. Call Customer"></div>
+            <div class="field" style="grid-column:1/-1;"><label>Description</label><input type="text" placeholder="Task details..."></div>
+            <div class="field"><label>Assign To</label><select style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid var(--border); background:#0b1220; color:var(--text);"><option>Sara Ahmed</option><option>Usman Raza</option></select></div>
+            <div class="field"><label>Due Date</label><input type="date"></div>
+            <div class="field"><label>Priority</label><select style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid var(--border); background:#0b1220; color:var(--text);"><option class="priority high">High</option><option class="priority medium">Medium</option><option class="priority low">Low</option></select></div>
+            <div class="field"><label>Status</label><select style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid var(--border); background:#0b1220; color:var(--text);"><option>Todo</option><option>In Progress</option></select></div>
+            <button class="btn" type="submit" style="grid-column:1/-1; margin-top:8px;">Create Task</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
